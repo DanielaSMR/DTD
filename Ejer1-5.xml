@@ -7,5 +7,13 @@
  <!ELEMENT asteroide (#PCDATA)>
 ]>
     <sistemaSolar>
-        <cuerpo planeta="Tierra" satelite="Luna" asteroide="Ceres"/>
+        <cuerpo>
+            <planeta>Tierra</planeta>
+        </cuerpo>
+        <cuerpo>
+            <satelite>Luna</satelite>
+        </cuerpo>
+        <cuerpo>
+            <asteroide>Ceres</asteroide>
+        </cuerpo>
     </sistemaSolar>
