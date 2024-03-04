@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas [
+ <!ELEMENT listafacturas (facturas)*>
+ <!ELEMENT facturas (emisor,pagador,importe)>
+ <!ELEMENT emisor (cifEmisor,nombreEmisor,volumenventas)>
+ <!ELEMENT pagador (cifPagador,nombrePagador,volumenventas)>
+ <!ELEMENT cifEmisor (#PCDATA)>
+ <!ELEMENT nombreEmisor (#PCDATA)>
+ <!ELEMENT cifPagador (#PCDATA)>
+ <!ELEMENT nombrePagador (#PCDATA)>
+ <!ELEMENT volumenventas (#PCDATA)>
+ <!ELEMENT importe (#PCDATA)>
+ <!ATTLIST facturas fecha NMTOKENS #REQUIRED>
+]>
+   <listafacturas>
+        <facturas fecha="11-2-2021">
+            <emisor>
+                <cifEmisor>123</cifEmisor>
+                <nombreEmisor>ACEM</nombreEmisor>
+                <volumenventas></volumenventas>
+            </emisor>
+            <pagador>
+                <cifPagador>234</cifPagador>
+                <nombrePagador>ACEM Inc</nombrePagador>
+                <volumenventas></volumenventas>
+            </pagador>
+            <importe>2500</importe>
+        </facturas>
+
+   </listafacturas>

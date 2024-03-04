@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos [
+    <!ELEMENT listacursos (cursos)*>
+    <!ELEMENT cursos (alumno)+>
+    <!ELEMENT alumno (DNI,nombre,apellido,segundoapellido?,asignaturas*)>
+    <!ELEMENT asignaturas (asignatura)*>
+    <!ELEMENT asignatura (codigo,profesor)>
+    <!ELEMENT profesor (NRP,nombre,apellido,segundoapellido?)>
+    <!ELEMENT DNI (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido (#PCDATA)>
+    <!ELEMENT segundoapellido (#PCDATA)>
+    <!ATTLIST asignatura nombreAsignatura (Castellano | Matematicas | Ciencias | Tecnologia) #REQUIRED>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT NRP (#PCDATA)>
+]>
+   <listacursos>
+        <cursos>
+            <alumno>
+                <DNI>454545646X</DNI>
+                <nombre>Pablo</nombre>
+                <apellido>Perez</apellido>
+                <segundoapellido>Juan</segundoapellido>
+                <asignaturas>
+                    <asignatura nombreAsignatura="Castellano">
+                        <codigo>123</codigo>
+                        <profesor>
+                            <NRP>222</NRP>
+                            <nombre>Tadeo</nombre>
+                            <apellido>Martinez</apellido>
+                        </profesor>
+                    </asignatura>
+                    <asignatura nombreAsignatura="Ciencias">
+                        <codigo>456</codigo>
+                        <profesor>
+                            <NRP>333</NRP>
+                            <nombre>Clara</nombre>
+                            <apellido>Sanchez</apellido>
+                        </profesor>
+                    </asignatura>
+                </asignaturas>
+            </alumno>
+            <alumno>
+                <DNI>454545646X</DNI>
+                <nombre>Pablo</nombre>
+                <apellido>Perez</apellido>
+                <segundoapellido>Juan</segundoapellido>
+                <asignaturas>
+                    <asignatura nombreAsignatura="Castellano">
+                        <codigo>123</codigo>
+                        <profesor>
+                            <NRP>222</NRP>
+                            <nombre>Tadeo</nombre>
+                            <apellido>Martinez</apellido>
+                        </profesor>
+                    </asignatura>
+                    <asignatura nombreAsignatura="Ciencias">
+                        <codigo>456</codigo>
+                        <profesor>
+                            <NRP>333</NRP>
+                            <nombre>Clara</nombre>
+                            <apellido>Sanchez</apellido>
+                        </profesor>
+                    </asignatura>
+                </asignaturas>
+            </alumno>
+        </cursos>
+
+   </listacursos>
